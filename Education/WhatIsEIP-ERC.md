@@ -1,0 +1,2 @@
+# What is an EIP? What is an ERC?
+An EIP or Ethereum Improvement Proposal is a design document for providing information to the Ethereum community. This includes new features, environments, and processes that will be continually implemented and changed throughout the life of Ethereum. There a few types of EIPs with the most popular and relevant one being an ERC or Ethereum Request for Comment. ERCs consist of the application and deployment level standards and conventions. For example, ERC20 is a typical cryptocurrency token standard used for fungible tokens.
