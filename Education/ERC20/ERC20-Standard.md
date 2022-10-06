@@ -18,34 +18,34 @@ Returns(uint8), the number of decimals the token divides into
 ```
 function decimals() public view returns (uint8)
 ```
-### **<span style="color:aqua">total Supply</span>**
+### **totalSupply** - required
 Returns(uint256), the total supply of the token
 ```
 function totalSupply() public view returns (uint256)
 ```
-### **<span style="color:aqua">balanceOf</span>**
+### **balanceOf** - required
 Returns(uint256), the balance of another account with address `_owner`
 ```
 function balanceOf(address _owner) public view returns (uint256 balance)
 ```
-### **<span style="color:aqua">transfer</span>**
+### **transfer** - required
 Transfers `_value` amount of tokens to address `_to`, and MUST fire the `Transfer` event. The function SHOULD `throw` if the message caller’s account balance does not have enough tokens to spend.
 ```
 function transfer(address _to, uint256 _value) public returns (bool success)
 ```
-### **<span style="color:aqua">transferFrom</span>**
+### **transferFrom** - required
 Transfers `_value amount` of tokens from address `_from` to address `_to`, and MUST fire the `Transfer` event.
 
 The `transferFrom` method is used for a withdraw workflow, allowing contracts to transfer tokens on your behalf. This can be used for example to allow a contract to transfer tokens on your behalf and/or to charge fees in sub-currencies. The function SHOULD `throw` unless the `_from` account has deliberately authorized the sender of the message via some mechanism.
 ```
 function transferFrom(address _from, address _to, uint256 _value) public returns (bool success)
 ```
-### **<span style="color:aqua">approve</span>**
+### **approve** - required
 Allows `_spender` to withdraw from your account multiple times, up to the `_value` amount. If this function is called again it overwrites the current allowance with `_value`.
 ```
 function approve(address _spender, uint256 _value) public returns (bool success)
 ```
-### **<span style="color:aqua">allowance</span>**
+### **allowance** - required
 Returns the amount which `_spender` is still allowed to withdraw from `_owner`.
 ```
 function allowance(address _owner, address _spender) public view returns (uint256 remaining)
