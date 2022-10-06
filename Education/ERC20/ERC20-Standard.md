@@ -2,7 +2,6 @@
 ERC20 at its simplest level is a standard interface for tokens. The EIP allows for the implementation of a standard API for tokens within smart contracts subsequently giving tokens basic functionality and the ability to be transferred and spent by another on-chain third-party. 
 
 ## Required Methods
----
 ### **name** - optional
 Returns(string), the name of the token
 ```
@@ -51,7 +50,6 @@ Returns the amount which `_spender` is still allowed to withdraw from `_owner`.
 function allowance(address _owner, address _spender) public view returns (uint256 remaining)
 ```
 ## Events
----
 ### **<span style="color:teal">Transfer</span>**
 MUST trigger when tokens are transferred, including zero value transfers.
 
